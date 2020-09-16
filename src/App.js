@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import './App.css';
-import 'h8k-components';
+import React, { Component } from "react";
+import "./App.css";
+import "h8k-components";
 
-import CycleCounter from './components/CycleCounter';
+import CycleCounter from "./components/CycleCounter";
 
 const title = "Cyclic Counter";
 
 class App extends Component {
   render() {
-    const { cycle } = this.props;
+    // const { cycle } = this.props;
     return (
       <div className="App">
         <h8k-navbar header={title}></h8k-navbar>
-        <CycleCounter cycle={cycle} />
+        <CycleCounter cycle={5} />
       </div>
     );
   }
